@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier -write ."
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.9",
@@ -15,6 +16,7 @@
     "@emotion/styled": "^11.10.0",
     "framer-motion": "^7.2.1",
     "next": "12.2.5",
+    "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
