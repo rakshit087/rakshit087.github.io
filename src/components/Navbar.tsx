@@ -1,6 +1,6 @@
 import { Flex, IconButton, Text } from "@chakra-ui/react";
 import { useColorMode, useColorModeValue } from "@chakra-ui/react";
-import { SunIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -13,7 +13,7 @@ export const Navbar = () => {
       my={6}
       position={"fixed"}
       px={4}
-      py={2}
+      py={1}
       rounded={"full"}
       transform="translate(-50%, 0)"
       width="85%"
@@ -24,15 +24,13 @@ export const Navbar = () => {
         bg={"none"}
         icon={<HamburgerIcon />}
         rounded={"full"}
-        size={"sm"}
         color={useColorModeValue("gray.600", "gray.400")}
       />
       <IconButton
         aria-label="Light Mode"
         bg={"none"}
-        icon={<SunIcon />}
+        icon={colorMode == "dark" ? <MoonIcon /> : <SunIcon />}
         rounded={"full"}
-        size={"sm"}
         onClick={toggleColorMode}
         color={useColorModeValue("gray.600", "gray.400")}
       />
