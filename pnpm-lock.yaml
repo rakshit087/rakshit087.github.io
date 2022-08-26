@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@chakra-ui/icons': ^2.0.9
   '@chakra-ui/react': ^2.2.9
   '@emotion/react': ^11.10.0
   '@emotion/styled': ^11.10.0
@@ -16,6 +17,7 @@ specifiers:
   typescript: 4.8.2
 
 dependencies:
+  '@chakra-ui/icons': 2.0.9_react@18.2.0
   '@chakra-ui/react': 2.2.9_t6dokxdkuiipickxg2ynuk4qpu
   '@emotion/react': 11.10.0_ug65io7jkbhmo4fihdmbrh3ina
   '@emotion/styled': 11.10.0_lzabd6uj4wst47copsenr4b56q
@@ -344,6 +346,26 @@ packages:
     dependencies:
       '@chakra-ui/shared-utils': 2.0.1
       '@chakra-ui/system': 2.2.7_rq3l25qc4qpq3j4w6o4x7hatzy
+      react: 18.2.0
+    dev: false
+
+  /@chakra-ui/icon/3.0.9_react@18.2.0:
+    resolution: {integrity: sha512-P2Pwm/za6m1W1oqL2kGHH6XrrymsBjqYAFwOW2lB5Q6mI1e+RYe/iMxDoPSLHMYhqdfH7vyib/ffE3Vv3a5oTA==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/shared-utils': 2.0.1
+      react: 18.2.0
+    dev: false
+
+  /@chakra-ui/icons/2.0.9_react@18.2.0:
+    resolution: {integrity: sha512-6xvV2rC8wATgfnRH+fC9mi0nLcgKjhHKO29lV1pGioVI0yWK0dqc//zjcyBhMMpW5ABnSfig7ujVBf3op/Syzg==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/icon': 3.0.9_react@18.2.0
       react: 18.2.0
     dev: false
 
