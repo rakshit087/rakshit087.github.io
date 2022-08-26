@@ -1,10 +1,13 @@
 import { Flex, IconButton, Text } from "@chakra-ui/react";
+import { useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 export const Navbar = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Flex
       border={"solid 2px"}
+      borderColor={useColorModeValue("gray.400", "gray.600")}
       justifyContent={"space-between"}
       left={"50%"}
       my={6}
@@ -22,6 +25,7 @@ export const Navbar = () => {
         icon={<HamburgerIcon />}
         rounded={"full"}
         size={"sm"}
+        color={useColorModeValue("gray.600", "gray.400")}
       />
       <IconButton
         aria-label="Light Mode"
@@ -29,6 +33,8 @@ export const Navbar = () => {
         icon={<SunIcon />}
         rounded={"full"}
         size={"sm"}
+        onClick={toggleColorMode}
+        color={useColorModeValue("gray.600", "gray.400")}
       />
     </Flex>
   );
