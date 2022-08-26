@@ -1,6 +1,7 @@
-import { Flex, useDisclosure } from "@chakra-ui/react";
+import { useDisclosure } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
+import { Intro } from "../components/Intro";
 import { Navbar } from "../components/Navbar";
 
 const Home: NextPage = () => {
@@ -14,14 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
       <main>
-        <Flex
-          id="intro"
-          alignItems="center"
-          height="100vh"
-          justifyContent="center"
-        >
-          <p>Hello World</p>
-        </Flex>
+        <Intro />
       </main>
 
       <footer></footer>
