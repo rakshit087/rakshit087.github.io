@@ -1,50 +1,10 @@
-import { Flex, IconButton } from '@chakra-ui/react';
-import { useColorMode, useColorModeValue } from '@chakra-ui/react';
-import { MoonIcon, SunIcon, HamburgerIcon } from '@chakra-ui/icons';
-
-interface props {
-  isOpen: boolean;
-  onClose: () => void;
-  onOpen: () => void;
-}
-
-export const Navbar = ({ isOpen, onClose, onOpen }: props) => {
-  const { colorMode, toggleColorMode } = useColorMode();
+export const Navbar = () => {
   return (
     <>
-      <Flex
-        border={'solid 2px'}
-        borderColor={useColorModeValue('gray.400', 'gray.600')}
-        justifyContent={'space-between'}
-        left={'50%'}
-        my={6}
-        position={'fixed'}
-        px={4}
-        py={1}
-        rounded={'full'}
-        transform="translate(-50%, 0)"
-        width="85%"
-        zIndex={1}
-      >
-        <IconButton
-          aria-label="Light Mode"
-          bg={'none'}
-          icon={<HamburgerIcon />}
-          rounded={'full'}
-          color={useColorModeValue('gray.600', 'gray.400')}
-          onClick={() => {
-            isOpen ? onClose() : onOpen();
-          }}
-        />
-        <IconButton
-          aria-label="Light Mode"
-          bg={'none'}
-          icon={colorMode == 'dark' ? <MoonIcon /> : <SunIcon />}
-          rounded={'full'}
-          onClick={toggleColorMode}
-          color={useColorModeValue('gray.600', 'gray.400')}
-        />
-      </Flex>
+      <div className="fixed z-50 flex justify-between w-5/6 px-4 py-1 my-6 -translate-x-1/2 border-2 border-gray-500 border-solid rounded-full left-1/2">
+        <button />
+        <button />
+      </div>
     </>
   );
 };
