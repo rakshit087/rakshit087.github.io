@@ -11,7 +11,7 @@ export const Intro = () => {
         <p className="mt-2 text-lg">and I love building cool stuff 🛠</p>
       </div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-        <CgScrollV className="fixed bottom-5" />
+        <CgScrollV className="absolute bottom-5" />
       </motion.div>
     </div>
   );
