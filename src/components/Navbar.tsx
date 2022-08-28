@@ -7,7 +7,7 @@ export const Navbar = () => {
         <button className="p-1 ">
           <IoMenu className="text-xl" />
         </button>
-        <button className="p-1 bg-pink-100 border-2 border-gray-700 rounded-full">
+        <button className="p-1">
           <IoUnlink className="text-xl" />
         </button>
       </div>
