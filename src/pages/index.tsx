@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { About } from '../components/About';
 import { Intro } from '../components/Intro';
 import { Navbar } from '../components/Navbar';
+import { Projects } from '../components/Projects';
 
 const Home: NextPage = () => {
   return (
@@ -13,9 +14,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main>
+      <main className="h-screen overflow-scroll snap-y snap-mandatory">
         <Intro />
         <About />
+        <Projects />
       </main>
 
       <footer></footer>
