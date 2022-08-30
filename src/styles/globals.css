@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#intro {
+.add-bg {
     background: rgb(98,211,213);
     background: linear-gradient(335deg, rgba(98,211,213,0.5760898109243697) 0%, rgba(235,164,244,0.3828125) 51%, rgba(255,237,197,0.8646052170868348) 100%);
 }
