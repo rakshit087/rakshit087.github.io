@@ -30,9 +30,11 @@ export const About = () => {
           <Image src="/images/music.svg" alt="anime" width={32} height={32} />
         </div>
       </div>
-      <button className="relative px-8 py-1 bg-white border-2 border-gray-700 rounded-full shadow-md top-16">
-        Resume
-      </button>
+      <a href="https://docs.google.com/document/d/1NPXhxng5PbFFkQKR9jrwVoAzo3lIAoyfFCGauFXx-3w/edit?usp=sharing">
+        <button className="relative px-8 py-1 bg-white border-2 border-gray-700 rounded-full shadow-md top-16">
+          Resume
+        </button>
+      </a>
     </div>
   );
 };
