@@ -1,4 +1,6 @@
-export const ProjectCard = () => {
+import { GrLink, GrGallery, GrCode } from 'react-icons/gr';
+
+export const ProjectCard = ({}) => {
   return (
     <>
       <div className="px-2 py-1 mb-2 border border-gray-700 border-solid rounded-full bg-pink-50 w-fit">
@@ -18,9 +20,17 @@ export const ProjectCard = () => {
             some form, by injected humour, or randomised words which don't look even slightly believable..
           </p>
           <div className="flex mb-4">
-            <p className="mr-4 text-gray-700 underline">Live</p>
-            <p className="mr-4 text-gray-700 underline">Gallery</p>
-            <p className="mr-4 text-gray-700 underline">Code</p>
+            <div>
+              <p className="mr-4 text-lg text-gray-700 underline">
+                <GrLink />
+              </p>
+            </div>
+            <p className="mr-4 text-lg text-gray-700 underline">
+              <GrGallery />
+            </p>
+            <p className="mr-4 text-lg text-gray-700">
+              <GrCode />
+            </p>
           </div>
         </div>
       </div>
