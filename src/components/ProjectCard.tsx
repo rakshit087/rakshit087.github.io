@@ -1,4 +1,4 @@
-import { GrLink, GrGallery, GrCode } from 'react-icons/gr';
+import { MdLink, MdPhotoLibrary, MdCode } from 'react-icons/md';
 
 export const ProjectCard = ({}) => {
   return (
@@ -22,14 +22,14 @@ export const ProjectCard = ({}) => {
           <div className="flex mb-4">
             <div>
               <p className="mr-4 text-lg text-gray-700 underline">
-                <GrLink />
+                <MdLink />
               </p>
             </div>
             <p className="mr-4 text-lg text-gray-700 underline">
-              <GrGallery />
+              <MdPhotoLibrary />
             </p>
             <p className="mr-4 text-lg text-gray-700">
-              <GrCode />
+              <MdCode />
             </p>
           </div>
         </div>
