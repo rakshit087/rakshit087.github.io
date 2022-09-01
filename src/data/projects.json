@@ -1,10 +1,56 @@
 [
   {
+    "title": "Kriti OS",
+    "desc": "A toy UNIX type 32 bit OS from scratch which includes a bootloader, kernel with drivers like video & sound and some basic functionality.",
+    "date": "Mar 2021 -  Jun 2021",
+    "code": "https://github.com/rakshit087/KritiOs",
+    "live": "",
+    "gallery": "https://github.com/rakshit087/KritiOs#gallery",
+    "tags": ["all", "system"]
+  },
+  {
+    "title": "Konnect",
+    "desc": "A simple Social Media application built using the MEVN stack along with Tailwind CSS. Allows users of VIT to interact with each other by posting posts, upvoting, downvoting and commenting.",
+    "date": "Nov 2020",
+    "code": "https://github.com/rakshit087/Konnect",
+    "live": "",
+    "gallery": "https://github.com/rakshit087/Konnect/blob/main/README.md#-gallery",
+    "tags": ["all", "full stack"]
+  },
+  {
+    "title": "Facemask Detection (Pytorch)",
+    "desc": "Built after completing my Deep Learning Specialization, this project aims to detect Facemask using cameras and microcontrollers. Built using Pytorch along with MobileNetv2 architecture and transfer learning.",
+    "date": "Oct 2020 - Nov 2020",
+    "code": "https://github.com/rakshit087/Face-Mask-Detection-PyTorch",
+    "live": "",
+    "gallery": "https://github.com/rakshit087/Face-Mask-Detection-PyTorch/blob/master/README.md",
+    "tags": ["all", "deep learning"]
+  },
+  {
+    "title": "Insta DM Bot",
+    "desc": "A dead simple Instagram Bot with GUI that can be used to DM a list of users and can be used for Social Media Marketing. Built using Python, Selenium and Eel.",
+    "date": "August 2020",
+    "code": "https://github.com/rakshit087/Insta-DM-Bot",
+    "live": "",
+    "gallery": "https://youtu.be/Zr7sSSgBP_0",
+    "tags": ["all", "scripting & automation"]
+  },
+  {
+    "title": "Ebank-Dummy",
+    "desc": "A dummy Ebank with Authentication, fake transactions and a downloadable passbook. Built using HTML, CSS, PHP and MySQL, this project got me into Web Developement.",
+    "date": "Jul 2020",
+    "code": "https://github.com/rakshit087/ebank-dummy",
+    "gallery": "https://github.com/rakshit087/ebank-dummy/blob/main/README.md",
+    "live": "",
+    "tags": ["all", "full stack"]
+  },
+  {
     "title": "TrafficGen",
-    "desc": "My very first project made with the very first language I ever learnt. A fairly small Python Script that generates traffic for your webpage by making http requests through tor proxy.",
+    "desc": "My first buidl, a reasonably modest Python script that sends HTTP requests over the Tor proxy to generate fake traffic for your website.",
     "date": "Jun 2020",
     "code": "https://github.com/rakshit087/trafficgenerator",
     "gallery": "",
-    "live": ""
+    "live": "",
+    "tags": ["all", "scripting & automation"]
   }
 ]
