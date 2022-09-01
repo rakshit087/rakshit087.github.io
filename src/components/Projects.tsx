@@ -1,14 +1,37 @@
 import { ProjectCard } from './ProjectCard';
 import data from '../data/projects.json';
+import { useEffect, useState } from 'react';
+
+type projects = {
+  title: string;
+  desc: string;
+  date: string;
+  gallery: string | undefined;
+  code: string | undefined;
+  live: string | undefined;
+  tags: string[];
+}[];
 
 export const Projects = () => {
+  const [tag, setTag] = useState<string>('all');
+  const [projects, setProjects] = useState<projects>(data);
+
+  useEffect(() => {
+    setProjects(
+      data.filter((project) => {
+        return project.tags.includes(tag);
+      })
+    );
+  }, [tag]);
+
   return (
     <div className="flex flex-col items-center min-h-screen px-8 py-24 snap-mandatory snap-start add-bg scroll-smooth">
       <p className="mb-8 text-3xl">Projects</p>
+
       <div className="flex w-full">
         <div className="mr-4 border border-gray-400 border-2-2"></div>
         <div className="w-full">
-          {data.map((project, id) => {
+          {projects.map((project, id) => {
             return (
               <ProjectCard
                 key={id}

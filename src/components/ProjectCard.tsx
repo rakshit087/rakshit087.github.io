@@ -1,6 +1,6 @@
 import { MdLink, MdPhotoLibrary, MdCode } from 'react-icons/md';
 
-interface projectProps {
+interface project {
   title: string;
   desc: string;
   date: string;
@@ -9,7 +9,7 @@ interface projectProps {
   live: string | undefined;
 }
 
-export const ProjectCard = ({ title, desc, date, gallery, code, live }: projectProps) => {
+export const ProjectCard = ({ title, desc, date, gallery, code, live }: project) => {
   return (
     <>
       <div className="px-2 py-1 mb-2 border border-gray-700 border-solid rounded-full bg-pink-50 w-fit">
@@ -31,14 +31,14 @@ export const ProjectCard = ({ title, desc, date, gallery, code, live }: projectP
                 <MdLink />
               </a>
             )}
-            {gallery && (
-              <a href={gallery} target="_blank" rel="noreferrer" className="mr-4 text-lg text-gray-700 underline">
-                <MdPhotoLibrary />
-              </a>
-            )}
             {code && (
               <a href={code} target="_blank" rel="noreferrer" className="mr-4 text-lg text-gray-700">
                 <MdCode />
+              </a>
+            )}
+            {gallery && (
+              <a href={gallery} target="_blank" rel="noreferrer" className="mr-4 text-lg text-gray-700 underline">
+                <MdPhotoLibrary />
               </a>
             )}
           </div>
