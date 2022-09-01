@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { MdFilterList } from 'react-icons/md';
 
 interface FilterButtonProps {
   tags: string[];
@@ -9,8 +10,13 @@ export const FilterButton = ({ tags, setTag }: FilterButtonProps) => {
   const [opened, setOpened] = useState<boolean>(false);
   return (
     <div className="relative flex flex-col items-end justify-end w-full mb-6">
-      <button id="dropdownDefault" className="" type="button" onClick={() => setOpened(!opened)}>
-        Filter
+      <button
+        id="dropdownDefault"
+        className="flex items-center justify-center"
+        type="button"
+        onClick={() => setOpened(!opened)}
+      >
+        <MdFilterList className="mr-1" /> Filter
       </button>
       <div
         id="dropdown"
