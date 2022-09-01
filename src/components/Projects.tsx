@@ -1,6 +1,7 @@
 import { ProjectCard } from './ProjectCard';
 import data from '../data/projects.json';
 import { useEffect, useState } from 'react';
+import { FilterButton } from './FilterButton';
 
 type projects = {
   title: string;
@@ -11,6 +12,8 @@ type projects = {
   live: string | undefined;
   tags: string[];
 }[];
+
+const tags = ['all', 'automation', 'full stack', 'system', 'web 3'];
 
 export const Projects = () => {
   const [tag, setTag] = useState<string>('all');
@@ -26,8 +29,8 @@ export const Projects = () => {
 
   return (
     <div className="flex flex-col items-center min-h-screen px-8 py-24 snap-mandatory snap-start add-bg scroll-smooth">
-      <p className="mb-8 text-3xl">Projects</p>
-
+      <p className="mb-6 text-3xl">Projects</p>
+      <FilterButton tags={tags} setTag={setTag} />
       <div className="flex w-full">
         <div className="mr-4 border border-gray-400 border-2-2"></div>
         <div className="w-full">
