@@ -1,10 +1,19 @@
 import { MdLink, MdPhotoLibrary, MdCode } from 'react-icons/md';
 
-export const ProjectCard = ({}) => {
+interface projectProps {
+  title: string;
+  desc: string;
+  date: string;
+  gallery: string | undefined;
+  code: string | undefined;
+  live: string | undefined;
+}
+
+export const ProjectCard = ({ title, desc, date, gallery, code, live }: projectProps) => {
   return (
     <>
       <div className="px-2 py-1 mb-2 border border-gray-700 border-solid rounded-full bg-pink-50 w-fit">
-        <p className="text-xs">Aug '22 to Nov '22</p>
+        <p className="text-xs">{date}</p>
       </div>
       <div className="w-full mb-8 bg-white border-2 border-gray-700 border-solid rounded-xl">
         <div
@@ -14,23 +23,24 @@ export const ProjectCard = ({}) => {
           }}
         ></div>
         <div className="px-4">
-          <h2 className="mb-4 text-2xl">Kolumn</h2>
-          <p className="mb-4">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-            some form, by injected humour, or randomised words which don't look even slightly believable..
-          </p>
+          <h2 className="mb-4 text-2xl">{title}</h2>
+          <p className="mb-4">{desc}</p>
           <div className="flex mb-4">
-            <div>
-              <p className="mr-4 text-lg text-gray-700 underline">
+            {live && (
+              <a href={live} target="_blank" rel="noreferrer" className="mr-4 text-lg text-gray-700 underline">
                 <MdLink />
-              </p>
-            </div>
-            <p className="mr-4 text-lg text-gray-700 underline">
-              <MdPhotoLibrary />
-            </p>
-            <p className="mr-4 text-lg text-gray-700">
-              <MdCode />
-            </p>
+              </a>
+            )}
+            {gallery && (
+              <a href={gallery} target="_blank" rel="noreferrer" className="mr-4 text-lg text-gray-700 underline">
+                <MdPhotoLibrary />
+              </a>
+            )}
+            {code && (
+              <a href={code} target="_blank" rel="noreferrer" className="mr-4 text-lg text-gray-700">
+                <MdCode />
+              </a>
+            )}
           </div>
         </div>
       </div>
