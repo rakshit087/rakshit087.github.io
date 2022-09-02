@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { MdFilterList } from 'react-icons/md';
 
@@ -6,6 +7,25 @@ interface FilterButtonProps {
   tags: string[];
   setTag: any;
 }
+
+const parentVariants = {
+  hidden: { opacity: 0, y: '-10%' },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      when: 'beforeChildren',
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+const childVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+  tapped: { scale: 0.95 },
+  hovered: { scale: 1.1 },
+};
 
 export const FilterButton = ({ selectedTag, tags, setTag }: FilterButtonProps) => {
   const [opened, setOpened] = useState<boolean>(false);
@@ -19,27 +39,34 @@ export const FilterButton = ({ selectedTag, tags, setTag }: FilterButtonProps) =
       >
         <MdFilterList className="mr-1" /> Filter
       </button>
-      <div
+      <motion.div
         id="dropdown"
         className={
           opened
             ? 'bg-white absolute flex border-2 border-gray-700 rounded-lg shadow-xl py-2 z-10 flex-col top-8 px-1'
             : 'hidden'
         }
+        animate={opened ? 'visible' : 'hidden'}
+        variants={parentVariants}
       >
         {tags.map((tag: string, index: any) => (
-          <p
+          <motion.p
             key={index}
             className={selectedTag === tag ? 'mb-2 bg-cyan-50 px-4 rounded-full' : 'mb-2 px-4'}
             onClick={() => {
               setTag(tag);
               setOpened(false);
             }}
+            variants={childVariants}
+            whileHover="hovered"
+            whileTap="tapped"
+            initial="hidden"
+            animate="visible"
           >
             {tag}
-          </p>
+          </motion.p>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
