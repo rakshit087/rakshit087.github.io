@@ -19,7 +19,6 @@ const Home: NextPage = () => {
         <About />
         <Projects />
       </main>
-      <div></div>
     </>
   );
 };
