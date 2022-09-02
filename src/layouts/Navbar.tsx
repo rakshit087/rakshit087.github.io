@@ -23,15 +23,45 @@ export const Navbar = () => {
         </button>
       </nav>
       <motion.div
-        className={
-          open ? 'absolute bg-white w-screen h-80 z-20 shadow-lg flex flex-col justify-center items-center' : 'hidden'
-        }
+        className={open ? 'absolute fill-screen z-20' : 'hidden'}
         animate={open ? 'open' : 'closed'}
         variants={variants}
+        onClick={() => {
+          setOpen(false);
+        }}
       >
-        <a href="#intro">Intro</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <div className="z-30 py-20 bg-white shadow-lg px-14">
+          <p className="mb-4 text-2xl font-bold">Jump To</p>
+          <div className="flex flex-col">
+            <a
+              href="#intro"
+              className="mb-2 text-xl"
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              Intro
+            </a>
+            <a
+              href="#about"
+              className="mb-2 text-xl"
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              About
+            </a>
+            <a
+              href="#projects"
+              className="mb-2 text-xl"
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              Projects
+            </a>
+          </div>
+        </div>
       </motion.div>
     </>
   );
