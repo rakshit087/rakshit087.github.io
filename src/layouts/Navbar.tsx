@@ -49,7 +49,7 @@ export const Navbar = () => {
                 setOpen(false);
               }}
             >
-              About
+              About Me
             </a>
             <a
               href="#projects"
@@ -58,7 +58,16 @@ export const Navbar = () => {
                 setOpen(false);
               }}
             >
-              Projects
+              My Projects
+            </a>
+            <a
+              href="#connect"
+              className="mb-2 text-xl"
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              Contact Me
             </a>
           </div>
         </div>

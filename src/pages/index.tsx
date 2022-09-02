@@ -4,6 +4,7 @@ import { About } from '../sections/About';
 import { Intro } from '../sections/Intro';
 import { Navbar } from '../layouts/Navbar';
 import { Projects } from '../sections/Projects';
+import { Connect } from '../sections/Connect';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
         <Intro />
         <About />
         <Projects />
+        <Connect />
       </main>
     </>
   );
