@@ -4,7 +4,7 @@ import { IoAirplane } from 'react-icons/io5';
 export const About = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center h-screen px-12 bg-no-repeat snap-start"
+      className="flex flex-col items-center justify-center px-12 bg-no-repeat fill-screen snap-start"
       style={{
         backgroundImage: "url('/images/bg-wave.svg')",
         backgroundPosition: 'bottom',

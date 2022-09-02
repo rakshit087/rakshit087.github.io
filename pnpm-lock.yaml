@@ -9,6 +9,7 @@ specifiers:
   eslint-config-next: 12.2.5
   framer-motion: ^7.2.1
   next: 12.2.5
+  next-real-viewport: ^0.7.2
   postcss: ^8.4.16
   prettier: ^2.7.1
   react: 18.2.0
@@ -20,6 +21,7 @@ specifiers:
 dependencies:
   framer-motion: 7.2.1_biqbaboplfbrettd7655fr4n2y
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
+  next-real-viewport: 0.7.2_3xcjr4wz26biff45sz3jtokgje
   prettier: 2.7.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1594,6 +1596,18 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /next-real-viewport/0.7.2_3xcjr4wz26biff45sz3jtokgje:
+    resolution: {integrity: sha512-Rnrm4iHDmQhIV7KhaUKWo0eTUeYh8UHRISl5ilkwB9v8bfuOPp9DAWAfa63/gDenYQaW/X58vWcHBd/23cSmhQ==}
+    peerDependencies:
+      next: ^12.1.0
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      next: 12.2.5_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /next/12.2.5_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-tBdjqX5XC/oFs/6gxrZhjmiq90YWizUYU6qOWAfat7zJwrwapJ+BYgX2PmiacunXMaRpeVT4vz5MSPSLgNkrpA==}

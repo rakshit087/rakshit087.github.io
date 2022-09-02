@@ -3,9 +3,13 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-html, body, #__next {
-    height: 100%;
+html, body {
     font-family: 'Poppins', sans-serif;
+}
+
+.fill-screen {
+    width: calc(var(--vw) * 100);
+    height: calc(var(--vh) * 100);
 }
 
 .add-bg {
