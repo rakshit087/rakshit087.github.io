@@ -29,7 +29,7 @@ export const Projects = () => {
 
   return (
     <section id="projects" className="flex flex-col items-center px-8 py-24 snap-start snap-always add-bg">
-      <p className="mb-6 text-3xl">Projects</p>
+      <p className="mb-6 text-3xl font-bold">Projects</p>
       <FilterButton selectedTag={tag} tags={tags} setTag={setTag} />
       <div className="flex w-full">
         <div className="mr-4 border border-gray-400 border-2-2"></div>
