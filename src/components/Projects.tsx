@@ -28,7 +28,7 @@ export const Projects = () => {
   }, [tag]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen px-8 py-24 transition-all snap-mandatory snap-start add-bg">
+    <div className="flex flex-col items-center min-h-screen px-8 pt-32 snap-start add-bg">
       <p className="mb-6 text-3xl">Projects</p>
       <FilterButton selectedTag={tag} tags={tags} setTag={setTag} />
       <div className="flex w-full">
