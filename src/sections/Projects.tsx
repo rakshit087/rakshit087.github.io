@@ -1,7 +1,7 @@
-import { ProjectCard } from './ProjectCard';
+import { ProjectCard } from '../components/ProjectCard';
 import data from '../data/projects.json';
 import { useEffect, useState } from 'react';
-import { FilterButton } from './FilterButton';
+import { FilterButton } from '../components/FilterButton';
 
 type projects = {
   title: string;
@@ -28,7 +28,7 @@ export const Projects = () => {
   }, [tag]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen px-8 pt-32 snap-start snap-always add-bg">
+    <section id="projects" className="flex flex-col items-center min-h-screen px-8 pt-32 snap-start snap-always add-bg">
       <p className="mb-6 text-3xl">Projects</p>
       <FilterButton selectedTag={tag} tags={tags} setTag={setTag} />
       <div className="flex w-full">
@@ -49,6 +49,6 @@ export const Projects = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
