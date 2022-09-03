@@ -2,14 +2,14 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center px-8 py-24 bg-no-repeat fill-screen snap-start snap-always"
+      className="flex flex-col items-center justify-center px-8 py-24 bg-no-repeat fill-screen snap-start snap-always md:px-32"
       style={{
         backgroundImage: "url('/images/bg-wave.svg')",
         backgroundPosition: 'bottom',
       }}
     >
-      <p className="mb-4 text-3xl font-bold">About</p>
-      <div className="mb-8 text-md">
+      <p className="mb-4 text-4xl font-bold md:text-5xl md:mb-8">About</p>
+      <div className="mb-8 text-lg md:text-xl md:mb-16">
         <p className="mb-4">
           I am a lifelong learner with experience in Full Stack Development and Automation. I am extremly passionate
           about writing code that has an impact and can bring ideas to life.
@@ -24,7 +24,9 @@ export const About = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <button className="px-8 py-1 bg-white border-2 border-gray-700 rounded-full shadow-md ">Resume</button>
+        <button className="px-8 py-1 bg-white border-2 border-gray-700 rounded-full shadow-md md:text-lg">
+          Resume
+        </button>
       </a>
     </section>
   );
