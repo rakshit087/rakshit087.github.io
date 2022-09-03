@@ -33,7 +33,7 @@ export const FilterButton = ({ selectedTag, tags, setTag }: FilterButtonProps) =
     <div className="relative flex flex-col items-end justify-end w-full mb-6">
       <button
         id="dropdownDefault"
-        className="flex items-center justify-center"
+        className="flex items-center justify-center md:text-lg"
         type="button"
         onClick={() => setOpened(!opened)}
       >
@@ -52,7 +52,9 @@ export const FilterButton = ({ selectedTag, tags, setTag }: FilterButtonProps) =
         {tags.map((tag: string, index: any) => (
           <motion.p
             key={index}
-            className={selectedTag === tag ? 'mb-2 bg-cyan-50 px-4 rounded-full' : 'mb-2 px-4'}
+            className={
+              selectedTag === tag ? 'mb-2 bg-cyan-50 px-4 rounded-full md:px-4 md:text-lg' : 'mb-2 px-4 md:text-lg'
+            }
             onClick={() => {
               setTag(tag);
               setOpened(false);
