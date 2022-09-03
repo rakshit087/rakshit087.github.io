@@ -1,21 +1,34 @@
+import { motion } from "framer-motion";
+
 const buttonClasses =
   "px-2 py-1 mr-4 text-lg border-2 border-gray-700 border-solid rounded-full bg-gradient-to-br from-pink-50 to-cyan-50";
+
+const linkVariant = {
+  tapped: { scale: 0.95 },
+  hovered: { scale: 1.05 },
+};
 
 export const NavMenu = () => {
   return (
     <div className="hidden lg:flex">
-      <a href="#intro" className={buttonClasses}>
+      <motion.a href="#intro" className={buttonClasses} variants={linkVariant} whileHover="hovered" whileTap="tapped">
         Intro
-      </a>
-      <a href="#about" className={buttonClasses}>
+      </motion.a>
+      <motion.a href="#about" className={buttonClasses} variants={linkVariant} whileHover="hovered" whileTap="tapped">
         About Me
-      </a>
-      <a href="#projects" className={buttonClasses}>
+      </motion.a>
+      <motion.a
+        href="#projects"
+        className={buttonClasses}
+        variants={linkVariant}
+        whileHover="hovered"
+        whileTap="tapped"
+      >
         My Projects
-      </a>
-      <a href="#connect" className={buttonClasses}>
+      </motion.a>
+      <motion.a href="#connect" className={buttonClasses} variants={linkVariant} whileHover="hovered" whileTap="tapped">
         Contact Me
-      </a>
+      </motion.a>
     </div>
   );
 };
