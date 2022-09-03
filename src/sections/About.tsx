@@ -8,7 +8,7 @@ export const About = () => {
         backgroundPosition: 'bottom',
       }}
     >
-      <p className="mb-4 text-4xl font-bold md:text-5xl md:mb-8">About</p>
+      <p className="mb-4 text-3xl font-bold md:text-4xl md:mb-8">About</p>
       <div className="mb-8 text-lg md:text-xl md:mb-16">
         <p className="mb-4">
           I am a lifelong learner with experience in Full Stack Development and Automation. I am extremly passionate
