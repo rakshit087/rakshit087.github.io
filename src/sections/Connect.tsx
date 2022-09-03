@@ -4,7 +4,7 @@ export const Connect = () => {
   return (
     <section
       id="connect"
-      className="relative flex flex-col items-center justify-center px-8 fill-screen snap-end md:px-32"
+      className="relative flex flex-col items-center justify-center h-screen px-8 snap-end md:px-32"
     >
       <div className="max-w-xl px-8 py-12 rounded-lg add-bg">
         <p className="mb-4 text-3xl font-bold text-center md:text-4xl md:mb-8">Contact Me</p>
