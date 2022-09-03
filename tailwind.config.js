@@ -7,7 +7,12 @@ module.exports = {
     "./src/sections/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        wave: "url('/images/bg-wave.svg')",
+        waveMobile: "url('/images/bg-wave-mobile.svg')",
+      },
+    },
   },
   plugins: [],
 };
