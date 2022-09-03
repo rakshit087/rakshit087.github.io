@@ -2,7 +2,10 @@ import { SiGmail, SiTwitter, SiGithub, SiHashnode, SiYoutube } from "react-icons
 
 export const Connect = () => {
   return (
-    <section id="connect" className="flex flex-col items-center justify-center h-screen px-8 snap-end md:px-32">
+    <section
+      id="connect"
+      className="relative flex flex-col items-center justify-center px-8 fill-screen snap-end md:px-32"
+    >
       <div className="max-w-xl px-8 py-12 rounded-lg add-bg">
         <p className="mb-4 text-3xl font-bold text-center md:text-4xl md:mb-8">Contact Me</p>
         <p className="mb-8 text-md md:text-xl md:mb-16">
@@ -27,6 +30,15 @@ export const Connect = () => {
           </a>
         </div>
       </div>
+      <footer className="absolute text-xs bottom-4">
+        Rakshit Arora 2022 --{" "}
+        <span className="italic text-gray-400">
+          Designed with 💜 by{" "}
+          <a href="https://rakshit087.vercel.app" className="underline">
+            Rakshit
+          </a>
+        </span>
+      </footer>
     </section>
   );
 };
