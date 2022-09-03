@@ -1,10 +1,10 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import { About } from '../sections/About';
-import { Intro } from '../sections/Intro';
-import { Navbar } from '../layouts/Navbar';
-import { Projects } from '../sections/Projects';
-import { Connect } from '../sections/Connect';
+import type { NextPage } from "next";
+import Head from "next/head";
+import { About } from "../sections/About";
+import { Intro } from "../sections/Intro";
+import { Navbar } from "../layouts/Navbar";
+import { Projects } from "../sections/Projects";
+import { Connect } from "../sections/Connect";
 
 const Home: NextPage = () => {
   return (

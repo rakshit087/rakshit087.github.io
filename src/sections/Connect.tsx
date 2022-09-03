@@ -1,4 +1,4 @@
-import { SiGmail, SiTwitter, SiGithub, SiHashnode, SiYoutube } from 'react-icons/si';
+import { SiGmail, SiTwitter, SiGithub, SiHashnode, SiYoutube } from "react-icons/si";
 
 export const Connect = () => {
   return (

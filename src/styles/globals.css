@@ -1,20 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
-html, body {
-    font-family: 'Poppins', sans-serif;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent;
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .fill-screen {
-    width: calc(var(--vw) * 100);
-    height: calc(var(--vh) * 100);
+  width: calc(var(--vw) * 100);
+  height: calc(var(--vh) * 100);
 }
 
 .add-bg {
-    background: rgb(98,211,213);
-    background: linear-gradient(335deg, rgba(98,211,213,0.5760898109243697) 0%, rgba(235,164,244,0.3828125) 51%, rgba(255,237,197,0.8646052170868348) 100%);
+  background: rgb(98, 211, 213);
+  background: linear-gradient(
+    335deg,
+    rgba(98, 211, 213, 0.5760898109243697) 0%,
+    rgba(235, 164, 244, 0.3828125) 51%,
+    rgba(255, 237, 197, 0.8646052170868348) 100%
+  );
 }

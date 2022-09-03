@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { MdFilterList } from 'react-icons/md';
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { MdFilterList } from "react-icons/md";
 
 interface FilterButtonProps {
   selectedTag: string;
@@ -9,12 +9,12 @@ interface FilterButtonProps {
 }
 
 const parentVariants = {
-  hidden: { opacity: 0, y: '-10%' },
+  hidden: { opacity: 0, y: "-10%" },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      when: 'beforeChildren',
+      when: "beforeChildren",
       staggerChildren: 0.5,
     },
   },
@@ -43,17 +43,17 @@ export const FilterButton = ({ selectedTag, tags, setTag }: FilterButtonProps) =
         id="dropdown"
         className={
           opened
-            ? 'bg-white absolute flex border-2 border-gray-700 rounded-lg shadow-xl py-2 z-10 flex-col top-8 px-1'
-            : 'hidden'
+            ? "bg-white absolute flex border-2 border-gray-700 rounded-lg shadow-xl py-2 z-10 flex-col top-8 px-1"
+            : "hidden"
         }
-        animate={opened ? 'visible' : 'hidden'}
+        animate={opened ? "visible" : "hidden"}
         variants={parentVariants}
       >
         {tags.map((tag: string, index: any) => (
           <motion.p
             key={index}
             className={
-              selectedTag === tag ? 'mb-2 bg-cyan-50 px-4 rounded-full md:px-4 md:text-lg' : 'mb-2 px-4 md:text-lg'
+              selectedTag === tag ? "mb-2 bg-cyan-50 px-4 rounded-full md:px-4 md:text-lg" : "mb-2 px-4 md:text-lg"
             }
             onClick={() => {
               setTag(tag);

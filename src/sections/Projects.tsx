@@ -1,7 +1,7 @@
-import { ProjectCard } from '../components/ProjectCard';
-import data from '../data/projects.json';
-import { useEffect, useState } from 'react';
-import { FilterButton } from '../components/FilterButton';
+import { ProjectCard } from "../components/ProjectCard";
+import data from "../data/projects.json";
+import { useEffect, useState } from "react";
+import { FilterButton } from "../components/FilterButton";
 
 type projects = {
   title: string;
@@ -13,10 +13,10 @@ type projects = {
   tags: string[];
 }[];
 
-const tags = ['all', 'automation', 'full stack', 'system', 'web 3'];
+const tags = ["all", "automation", "full stack", "system", "web 3"];
 
 export const Projects = () => {
-  const [tag, setTag] = useState<string>('all');
+  const [tag, setTag] = useState<string>("all");
   const [projects, setProjects] = useState<projects>(data);
 
   useEffect(() => {

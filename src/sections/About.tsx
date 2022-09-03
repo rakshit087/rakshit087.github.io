@@ -5,7 +5,7 @@ export const About = () => {
       className="flex flex-col items-center justify-center px-8 py-24 bg-no-repeat fill-screen snap-start snap-always md:px-32"
       style={{
         backgroundImage: "url('/images/bg-wave.svg')",
-        backgroundPosition: 'bottom',
+        backgroundPosition: "bottom",
       }}
     >
       <p className="mb-4 text-3xl font-bold md:text-4xl md:mb-8">About</p>

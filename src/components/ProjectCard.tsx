@@ -1,5 +1,5 @@
-import { MdLink, MdPhotoLibrary, MdCode } from 'react-icons/md';
-import { motion } from 'framer-motion';
+import { MdLink, MdPhotoLibrary, MdCode } from "react-icons/md";
+import { motion } from "framer-motion";
 
 interface project {
   title: string;
@@ -20,7 +20,7 @@ export const ProjectCard = ({ title, desc, date, gallery, code, live }: project)
         <div
           className="relative right-0 w-5 h-5 -translate-y-1/2 bg-gray-700 border-2 border-gray-400 border-solid rounded-full top-1/2"
           style={{
-            right: '29px',
+            right: "29px",
           }}
         ></div>
         <div className="px-4">
