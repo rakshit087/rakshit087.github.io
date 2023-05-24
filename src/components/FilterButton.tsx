@@ -52,15 +52,13 @@ export const FilterButton = ({ selectedTag, tags, setTag }: FilterButtonProps) =
         {tags.map((tag: string, index: any) => (
           <motion.p
             key={index}
-            className={
-              selectedTag === tag ? "mb-2 bg-cyan-50 px-4 rounded-full md:px-4 md:text-lg" : "mb-2 px-4 md:text-lg"
-            }
+            className={`mb-2 px-4 md:text-lg cursor-pointer ${selectedTag === tag ? "bg-cyan-50" : ""}}`}
             onClick={() => {
               setTag(tag);
               setOpened(false);
             }}
             variants={childVariants}
-            whileHover="hovered"
+            whileHover={selectedTag === tag ? "" : "hovered"}
             whileTap="tapped"
             initial="hidden"
             animate="visible"
