@@ -15,13 +15,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: npm
+          cache: pnpm
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.4
+      
       - name: Build
         run: |
-          npm ci
-          npm run build
-          npm run export
+          pnpm i
+          pnpm run build
+          pnpm run export
           touch out/.nojekyll
 
       - name: Deploy
