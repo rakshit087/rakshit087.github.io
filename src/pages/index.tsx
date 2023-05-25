@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="h-screen overflow-scroll snap-y snap-mandatory scroll-smooth">
+      <main className="scroll-smooth">
         <Intro />
         <About />
         <Projects />

@@ -2,8 +2,8 @@
 
 const githubPages = process.env.GITHUB_ACTIONS || false;
 
-let assetPrefix = ''
-let basePath = '/'
+let assetPrefix = '/'
+let basePath = ''
 
 if (githubPages) {
   assetPrefix = '/portfolio/'

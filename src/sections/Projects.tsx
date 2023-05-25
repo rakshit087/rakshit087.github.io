@@ -30,7 +30,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center h-screen px-8 py-24 overflow-scroll snap-start snap-always add-bg md:px-32 lg:py-32"
+      className="flex flex-col items-center min-h-screen px-8 py-24 add-bg md:px-32 lg:py-32"
     >
       <div className="flex flex-col items-center justify-center max-w-xl">
         <p className="mb-6 text-3xl font-bold md:text-4xl">Projects</p>
