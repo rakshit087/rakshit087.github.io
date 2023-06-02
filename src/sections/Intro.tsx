@@ -8,7 +8,7 @@ export const Intro = () => {
         <p className="text-3xl tracking-wider md:text-4xl lg:text-5xl lg:mb-1">
           Rakshit <strong>Arora</strong>,
         </p>
-        <p className="mt-2 text-lg md:text-xl lg:text-2xl ">and I love building cool stuff 🛠</p>
+        <p className="mt-2 text-lg md:text-xl lg:text-2xl ">and I love building cool stuff 🛠️</p>
       </motion.div>
     </section>
   );
