@@ -12,18 +12,11 @@ interface project {
 
 export const ProjectCard = ({ title, desc, date, gallery, code, live }: project) => {
   return (
-    <motion.div initial={{ x: -100 }} whileInView={{ x: 0 }} viewport={{ once: true }}>
+    <motion.div initial={{ y: 100 }} whileInView={{ y: 0 }} viewport={{ once: true }}>
       <div className="px-2 py-1 mb-2 border border-gray-700 border-solid rounded-full bg-pink-50 w-fit">
         <p className="text-xs md:text-sm">{date}</p>
       </div>
-      <div className="w-full mb-8 bg-white border-2 border-gray-700 border-solid rounded-xl md:mb-10">
-        <div
-          className="relative right-0 w-5 h-5 -translate-y-1/2 bg-gray-700 border-2 border-gray-400 border-solid rounded-full top-1/2"
-          style={{
-            right: "29px",
-          }}
-        ></div>
-        <div className="px-4">
+      <div className="px-4 py-6 mb-8 bg-white border-2 border-gray-700 border-solid rounded-xl md:mb-10">
           <h2 className="mb-4 text-2xl md:text-3xl md:mb-6">{title}</h2>
           <p className="mb-4 md:text-lg md:mb-6">{desc}</p>
           <div className="flex mb-4">
@@ -49,7 +42,6 @@ export const ProjectCard = ({ title, desc, date, gallery, code, live }: project)
             )}
           </div>
         </div>
-      </div>
     </motion.div>
   );
 };
