@@ -12,7 +12,7 @@ interface project {
 
 export const ProjectCard = ({ title, desc, date, gallery, code, live }: project) => {
   return (
-    <motion.div initial={{ y: 100 }} whileInView={{ y: 0 }} viewport={{ once: true }} className="flex flex-col h-full">
+    <motion.div initial={{ y: 100 }} whileInView={{ y: 0 }} viewport={{ once: false }} className="flex flex-col h-full">
       <div className="py-1 px-2 mb-2 bg-pink-50 rounded-full border border-gray-700 border-solid w-fit">
         <p className="text-xs md:text-sm">{date}</p>
       </div>

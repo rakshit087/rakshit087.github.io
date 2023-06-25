@@ -2,7 +2,9 @@ import { ProjectCard } from "../components/ProjectCard";
 import data from "../data/projects.json";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 import "swiper/css";
+import 'swiper/css/pagination';
 
 type projects = {
   title: string;
@@ -26,8 +28,10 @@ export const Projects = () => {
       <p className="mb-12 text-3xl font-bold md:text-4xl">Personal Projects</p>
       <Swiper
         ref={swiperElRef}
+        modules={[Pagination]}
         spaceBetween={50}
         slidesPerView={1}
+        pagination={{ clickable: true, el: "#projects-pagination" }}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -44,6 +48,7 @@ export const Projects = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div id="projects-pagination" className="w-full justify-center flex" />
     </section>
   );
 };
