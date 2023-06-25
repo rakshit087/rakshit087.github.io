@@ -8,6 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+  overflow: overlay;
 }
 
 .fill-screen {
@@ -17,12 +18,10 @@ body {
 
 .add-bg {
   background: rgb(98, 211, 213);
-  background: linear-gradient(
-    335deg,
-    rgba(98, 211, 213, 0.5760898109243697) 0%,
-    rgba(235, 164, 244, 0.3828125) 51%,
-    rgba(255, 237, 197, 0.8646052170868348) 100%
-  );
+  background: linear-gradient(335deg,
+      rgba(98, 211, 213, 0.5760898109243697) 0%,
+      rgba(235, 164, 244, 0.3828125) 51%,
+      rgba(255, 237, 197, 0.8646052170868348) 100%);
 }
 
 /* Project Section Pagination */
@@ -33,4 +32,20 @@ body {
 
 .swiper-pagination-bullet-active {
   background: #374151 !important;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(98, 211, 213);
+  background: linear-gradient(335deg,
+      rgba(98, 211, 213, 0.5760898109243697) 0%,
+      rgba(235, 164, 244, 0.3828125) 51%,
+      rgba(255, 237, 197, 0.8646052170868348) 100%);
+  border: 2px solid #374151;
+  border-radius: 24px;
 }
