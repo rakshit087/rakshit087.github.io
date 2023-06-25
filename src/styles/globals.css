@@ -24,3 +24,13 @@ body {
     rgba(255, 237, 197, 0.8646052170868348) 100%
   );
 }
+
+/* Project Section Pagination */
+
+.swiper-pagination-bullet {
+  margin: 0px 2px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #374151 !important;
+}
