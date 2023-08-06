@@ -6,10 +6,9 @@ let assetPrefix = '/'
 let basePath = ''
 
 if (githubPages) {
-  assetPrefix = ''
+  assetPrefix = '/'
   basePath = ''
 }
-
 
 const nextConfig = {
   reactStrictMode: true,
