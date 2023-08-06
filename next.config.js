@@ -6,8 +6,8 @@ let assetPrefix = '/'
 let basePath = ''
 
 if (githubPages) {
-  assetPrefix = '/'
-  basePath = '/'
+  assetPrefix = ''
+  basePath = ''
 }
 
 
