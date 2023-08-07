@@ -19,8 +19,8 @@ export const About = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row">
-          <PrimaryButton label="Mind Map" href="https://rakshit087.github.io/mind-map" />
           <PrimaryButton label="Resume" href="https://bit.ly/rakshit-resume" />
+          <PrimaryButton label="Mind Map" href="https://rakshit087.github.io/mind-map" />
         </div>
       </div>
     </section>
