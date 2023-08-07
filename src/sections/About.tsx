@@ -1,3 +1,5 @@
+import { PrimaryButton } from "../components/PrimaryButton";
+
 export const About = () => {
   return (
     <section
@@ -12,29 +14,13 @@ export const About = () => {
             bringing ideas to life and writing readable and beautiful code.
           </p>
           <p>
-            In addition to development, I enjoy travelling, watching anime, listening to music, reading
-            fiction and helping communities and individuals.
+            In addition to development, I enjoy travelling, watching anime, listening to music, reading fiction and
+            helping communities and individuals.
           </p>
         </div>
         <div className="flex flex-col md:flex-row">
-        <a
-          href="https://rakshit087.github.io/mind-map"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="px-8 py-1 bg-white border-2 border-gray-700 rounded-full shadow-md md:text-lg w-40 md:mr-4 mb-4 md:mb-0">
-            Mind Map
-          </button>
-        </a>
-        <a
-          href="https://docs.google.com/document/d/1NPXhxng5PbFFkQKR9jrwVoAzo3lIAoyfFCGauFXx-3w/edit?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="px-8 py-1 bg-white border-2 border-gray-700 rounded-full shadow-md md:text-lg md:mr-4 mb-4 md:mb-0 w-40">
-            Resume
-          </button>
-        </a>
+          <PrimaryButton label="Mind Map" href="https://rakshit087.github.io/mind-map" />
+          <PrimaryButton label="Resume" href="https://bit.ly/rakshit-resume" />
         </div>
       </div>
     </section>
