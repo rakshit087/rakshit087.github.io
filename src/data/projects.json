@@ -1,26 +1,12 @@
 [
   {
-    "title": "Kitabay",
-    "desc": "Kitabay allows users to Publish or Buy a Book as an NFT, once a user has the NFT of a book, he has access to the book's content which can be traded, gifted or resold. Built using Nextjs with TypeScript and ChakraUI while the Smart contrats were writtend and tested using Foundry.",
-    "date": "Jun 2023",
-    "live": "https://kitabay-4e5f08.spheron.app/",
-    "code": "https://github.com/rakshit087/kitabay",
-    "gallery": "https://devpost.com/software/kitabay",
-    "tags": [
-      "all"
-    ]
-  },
-  {
     "title": "Pledge Dashboard",
     "desc": "A dashboard which gives statistics about the liquid stacking derivatives on the top 5 derivative platforms of Polygon POS. Built using Next, Tailwind, D3 and MongoDB written in TypeScript.",
     "date": "Nov 2022",
     "code": "https://github.com/Pledge-Dashboard/pledge-app",
     "live": "https://pledge-dashboard.vercel.app/",
     "gallery": "",
-    "tags": [
-      "all",
-      "full-stack"
-    ]
+    "tags": ["all", "full-stack"]
   },
   {
     "title": "Lend3r",
@@ -29,10 +15,7 @@
     "code": "https://github.com/rakshit087/lend3r",
     "gallery": "https://devfolio.co/projects/lendr-d1f0",
     "live": "https://lend3r.vercel.app/",
-    "tags": [
-      "all",
-      "web 3"
-    ]
+    "tags": ["all", "web 3"]
   },
   {
     "title": "Kolumn",
@@ -41,10 +24,7 @@
     "code": "https://github.com/rakshit087/Kolumn",
     "gallery": "https://devfolio.co/projects/kolumn-b3f9",
     "live": "https://kolumn.vercel.app/",
-    "tags": [
-      "all",
-      "web 3"
-    ]
+    "tags": ["all", "web 3"]
   },
   {
     "title": "Kriti OS",
@@ -53,9 +33,6 @@
     "code": "https://github.com/rakshit087/KritiOs",
     "live": "",
     "gallery": "https://github.com/rakshit087/KritiOs#gallery",
-    "tags": [
-      "all",
-      "system"
-    ]
+    "tags": ["all", "system"]
   }
 ]
