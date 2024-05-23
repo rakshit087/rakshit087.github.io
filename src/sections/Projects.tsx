@@ -1,10 +1,10 @@
 import { ProjectCard } from "../components/ProjectCard";
-import data from "../data/projects.json";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
-import 'swiper/css/pagination';
+import "swiper/css/pagination";
+import { constants } from "../constants";
 
 type projects = {
   title: string;
@@ -17,7 +17,7 @@ type projects = {
 }[];
 
 export const Projects = () => {
-  const projects: projects = data;
+  const projects: projects = constants.projects;
   const swiperElRef = useRef(null);
 
   return (

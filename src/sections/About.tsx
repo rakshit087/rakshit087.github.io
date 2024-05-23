@@ -1,4 +1,5 @@
 import { PrimaryButton } from "../components/PrimaryButton";
+import { constants } from "../constants";
 
 export const About = () => {
   return (
@@ -8,19 +9,11 @@ export const About = () => {
     >
       <div className="flex flex-col items-center justify-center max-w-3xl">
         <p className="mb-4 text-3xl font-bold md:text-4xl md:mb-8">About</p>
-        <div className="mb-8 text-lg md:text-xl md:mb-16">
-          <p className="mb-4">
-            I am a lifelong learner with experience in Full Stack Development and Automation. I am passionate about
-            bringing ideas to life and writing readable and beautiful code.
-          </p>
-          <p>
-            In addition to development, I enjoy travelling, watching anime, listening to music, reading fiction and
-            helping communities and individuals.
-          </p>
-        </div>
+        <div className="mb-8 text-lg md:text-xl md:mb-16">{constants.about}</div>
         <div className="flex flex-col md:flex-row">
-          <PrimaryButton label="Resume" href="https://bit.ly/rakshit-resume" />
-          <PrimaryButton label="Mind Map" href="https://rakshit087.github.io/mind-map" />
+          {constants.aboutURLs.map((aboutUrl, index) => (
+            <PrimaryButton key={index} label={aboutUrl.title} href={aboutUrl.url} />
+          ))}
         </div>
       </div>
     </section>

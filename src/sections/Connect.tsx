@@ -1,4 +1,5 @@
 import { SiGmail, SiTwitter, SiGithub, SiHashnode, SiYoutube } from "react-icons/si";
+import { constants } from "../constants";
 
 export const Connect = () => {
   return (
@@ -8,27 +9,33 @@ export const Connect = () => {
     >
       <div className="max-w-xl px-8 py-12 rounded-lg add-bg">
         <p className="mb-4 text-3xl font-bold text-center md:text-4xl md:mb-8">Contact Me</p>
-        <p className="mb-8 text-md md:text-xl md:mb-16">
-          I love connecting with different people and it would be awesome if we could get in touch :) 
-          You can schedule a meet with me on Cal <a href="https://cal.com/rakshit087" className="text-blue-900">here.</a> 
-          You can also find me on these platforms:
-        </p>
+        <p className="mb-8 text-md md:text-xl md:mb-16">{constants.contactContent}</p>
         <div className="flex items-center justify-around w-full py-6 text-3xl rounded-xl">
-          <a href="mailto:rakshit087@gmail.com">
-            <SiGmail />
-          </a>
-          <a href="https://twitter.com/rakshit087/" target="_blank" rel="noreferrer">
-            <SiTwitter />
-          </a>
-          <a href="https://github.com/rakshit087/" target="_blank" rel="noreferrer">
-            <SiGithub />
-          </a>
-          <a href="https://rakshit087.hashnode.dev/" target="_blank" rel="noreferrer">
-            <SiHashnode />
-          </a>
-          <a href="https://www.youtube.com/channel/UCA446V0YEkL_BeBZt8gXFHg" target="_blank" rel="noreferrer">
-            <SiYoutube />
-          </a>
+          {constants.contactURLs.gmail && (
+            <a href={constants.contactURLs.gmail}>
+              <SiGmail />
+            </a>
+          )}
+          {constants.contactURLs.twitter && (
+            <a href={constants.contactURLs.twitter} target="_blank" rel="noreferrer">
+              <SiTwitter />
+            </a>
+          )}
+          {constants.contactURLs.github && (
+            <a href={constants.contactURLs.github} target="_blank" rel="noreferrer">
+              <SiGithub />
+            </a>
+          )}
+          {constants.contactURLs.hashnode && (
+            <a href={constants.contactURLs.hashnode} target="_blank" rel="noreferrer">
+              <SiHashnode />
+            </a>
+          )}
+          {constants.contactURLs.youtube && (
+            <a href={constants.contactURLs.youtube} target="_blank" rel="noreferrer">
+              <SiYoutube />
+            </a>
+          )}
         </div>
       </div>
       <footer className="absolute text-xs bottom-4 text-center">
@@ -39,7 +46,7 @@ export const Connect = () => {
           </a>
         </span>
         <div className="text-gray-400 italic">
-          Source code available on{" "} 
+          Source code available on{" "}
           <a href="https://github.com/rakshit087/rakshit087.github.io" className="underline">
             GitHub
           </a>
