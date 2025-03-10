@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center px-8 py-24 bg-bottom bg-no-repeat fill-screen snap-start snap-always md:px-32 bg-waveMobile lg:bg-wave"
+      className="flex flex-col items-center justify-center px-8 py-24 snap-start snap-always md:px-32 fill-screen"
     >
       <div className="flex flex-col items-center justify-center max-w-3xl">
         <p className="mb-4 text-3xl font-bold md:text-4xl md:mb-8">About</p>

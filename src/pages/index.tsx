@@ -18,6 +18,7 @@ const Home: NextPage = () => {
       <main className="h-screen overflow-y-scroll overflow-x-clip scroll-smooth snap-mandatory snap-y">
         <Intro />
         <About />
+        {/* <Journey /> */}
         <Projects />
         <Connect />
       </main>

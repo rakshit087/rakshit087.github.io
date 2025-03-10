@@ -6,7 +6,7 @@ export const constants = {
   aboutURLs: [
     {
       title: "Resume",
-      url: "https://bit.ly/rakshit-resume",
+      url: "https://bit.ly/rakshit-resume-aug-2024",
     },
     {
       title: "Mind Map",
@@ -14,6 +14,15 @@ export const constants = {
     },
   ],
   projects: [
+    {
+      title: "Purnari Kitabay",
+      desc: "A web app and a browser extension to search for cheap and authentic preloved books accross various book stores in India. Built for the love of books using TypeScript, Next.js and Chrome Web API.",
+      date: "Aug 2024",
+      code: "https://github.com/rakshit087/purani-kitabe",
+      live: "https://purani-kitabe.rakshit087.workers.dev/",
+      gallery: "",
+      tags: ["all", "full-stack"],
+    },
     {
       title: "Pledge Dashboard",
       desc: "A dashboard which gives statistics about the liquid stacking derivatives on the top 5 derivative platforms of Polygon POS. Built using Next, Tailwind, D3 and MongoDB written in TypeScript.",
