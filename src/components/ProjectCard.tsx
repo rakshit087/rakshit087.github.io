@@ -1,5 +1,11 @@
+import React from "react";
 import { MdLink, MdPhotoLibrary, MdCode } from "react-icons/md";
 import { motion } from "framer-motion";
+import { IconType } from "react-icons";
+
+const IconWrapper = ({ icon: Icon }: { icon: IconType }) => {
+  return <Icon />;
+};
 
 interface project {
   title: string;
@@ -12,7 +18,12 @@ interface project {
 
 export const ProjectCard = ({ title, desc, date, gallery, code, live }: project) => {
   return (
-    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }} className="flex flex-col h-full">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false }}
+      className="flex flex-col h-full"
+    >
       <div className="py-1 px-2 mb-2 bg-pink-50 rounded-full border border-gray-700 border-solid w-fit">
         <p className="text-xs md:text-sm">{date}</p>
       </div>
@@ -22,12 +33,12 @@ export const ProjectCard = ({ title, desc, date, gallery, code, live }: project)
         <div className="flex">
           {live && (
             <a href={live} target="_blank" rel="noreferrer" className="mr-4 text-lg text-gray-700 md:mr-6 md:text-xl">
-              <MdLink />
+              <IconWrapper icon={MdLink} />
             </a>
           )}
           {code && (
             <a href={code} target="_blank" rel="noreferrer" className="mr-4 text-lg text-gray-700 md:mr-6 md:text-xl">
-              <MdCode />
+              <IconWrapper icon={MdCode} />
             </a>
           )}
           {gallery && (
@@ -37,7 +48,7 @@ export const ProjectCard = ({ title, desc, date, gallery, code, live }: project)
               rel="noreferrer"
               className="mr-4 text-lg text-gray-700 md:mr-6 md:text-xl"
             >
-              <MdPhotoLibrary />
+              <IconWrapper icon={MdPhotoLibrary} />
             </a>
           )}
         </div>
