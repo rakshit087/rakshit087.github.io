@@ -1,11 +1,5 @@
-import React from "react";
-import { MdLink, MdPhotoLibrary, MdCode } from "react-icons/md";
 import { motion } from "framer-motion";
-import { IconType } from "react-icons";
-
-const IconWrapper = ({ icon: Icon }: { icon: IconType }) => {
-  return <Icon />;
-};
+import { Images, Link2, Code } from "lucide-react";
 
 interface project {
   title: string;
@@ -30,15 +24,15 @@ export const ProjectCard = ({ title, desc, date, gallery, code, live }: project)
       <div className="flex flex-col flex-grow justify-between py-6 px-4 mb-8 bg-white rounded-xl border-2 border-gray-700 border-solid cursor-pointer md:mb-10">
         <h2 className="mb-4 text-2xl md:mb-6 md:text-3xl">{title}</h2>
         <p className="mb-4 md:mb-6">{desc}</p>
-        <div className="flex">
+        <div className="flex gap-3">
           {live && (
-            <a href={live} target="_blank" rel="noreferrer" className="mr-4 text-lg text-gray-700 md:mr-6 md:text-xl">
-              <IconWrapper icon={MdLink} />
+            <a href={live} target="_blank" rel="noreferrer">
+              <Link2 className="w-5 h-5" />
             </a>
           )}
           {code && (
-            <a href={code} target="_blank" rel="noreferrer" className="mr-4 text-lg text-gray-700 md:mr-6 md:text-xl">
-              <IconWrapper icon={MdCode} />
+            <a href={code} target="_blank" rel="noreferrer">
+              <Code className="w-5 h-5" />
             </a>
           )}
           {gallery && (
@@ -48,7 +42,7 @@ export const ProjectCard = ({ title, desc, date, gallery, code, live }: project)
               rel="noreferrer"
               className="mr-4 text-lg text-gray-700 md:mr-6 md:text-xl"
             >
-              <IconWrapper icon={MdPhotoLibrary} />
+              <Images className="w-5 h-5" />
             </a>
           )}
         </div>
