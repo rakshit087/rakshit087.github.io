@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { IoMenu } from "react-icons/io5";
 import { NavMenu } from "../components/NavMenu";
 import { NavMenuMobile } from "../components/NavMenuMobile";
+import { Menu } from "lucide-react";
 
 export const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -15,7 +15,7 @@ export const Navbar = () => {
             setOpen(!open);
           }}
         >
-          <IoMenu className="text-xl" />
+          <Menu className="text-xl" />
         </button>
         <NavMenu />
       </nav>

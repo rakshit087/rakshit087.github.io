@@ -1,4 +1,4 @@
-import { SiGmail, SiTwitter, SiGithub, SiHashnode, SiYoutube } from "react-icons/si";
+import { SiGmail, SiX, SiGithub, SiHashnode, SiYoutube } from "@icons-pack/react-simple-icons";
 import { constants } from "../constants";
 
 export const Connect = () => {
@@ -13,27 +13,27 @@ export const Connect = () => {
         <div className="flex items-center justify-around w-full py-6 text-3xl rounded-xl">
           {constants.contactURLs.gmail && (
             <a href={constants.contactURLs.gmail}>
-              <SiGmail />
+              <SiGmail size={32} />
             </a>
           )}
           {constants.contactURLs.twitter && (
             <a href={constants.contactURLs.twitter} target="_blank" rel="noreferrer">
-              <SiTwitter />
+              <SiX size={32} />
             </a>
           )}
           {constants.contactURLs.github && (
             <a href={constants.contactURLs.github} target="_blank" rel="noreferrer">
-              <SiGithub />
+              <SiGithub size={32} />
             </a>
           )}
           {constants.contactURLs.hashnode && (
             <a href={constants.contactURLs.hashnode} target="_blank" rel="noreferrer">
-              <SiHashnode />
+              <SiHashnode size={32} />
             </a>
           )}
           {constants.contactURLs.youtube && (
             <a href={constants.contactURLs.youtube} target="_blank" rel="noreferrer">
-              <SiYoutube />
+              <SiYoutube size={32} />
             </a>
           )}
         </div>
